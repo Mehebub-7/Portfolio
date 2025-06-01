@@ -1,0 +1,315 @@
+/* ===== Root Theme Variables ===== */
+:root {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --primary-color: #00bfa6;
+  --header-bg: #1a1a1a;
+  --footer-color: #888;
+  --btn-bg: #00bfa6;
+  --btn-bg-hover: #00d6bb;
+  --link-color: #00bfa6;
+  --link-hover: #00d6bb;
+  --box-shadow-color: rgba(0, 191, 166, 0.2);
+}
+
+[data-theme="light"] {
+  --bg-color: #f5f7fa;
+  --text-color: #1e1e1e;
+  --primary-color: #1976d2;
+  --header-bg: #ffffff;
+  --footer-color: #555;
+  --btn-bg: #1976d2;
+  --btn-bg-hover: #0d47a1;
+  --link-color: #1976d2;
+  --link-hover: #0d47a1;
+  --box-shadow-color: rgba(25, 118, 210, 0.15);
+}
+
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Base Styles ===== */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  color: var(--link-color);
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+header {
+  background: var(--header-bg);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--box-shadow-color);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+nav {
+  flex-grow: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+nav a {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ===== Name Animation ===== */
+#name-text {
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#name-text span {
+  display: inline-block;
+  transform-origin: center bottom;
+}
+
+/* ===== Theme Toggle ===== */
+#theme-toggle {
+  background: var(--btn-bg);
+  color: var(--text-color);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s, color 0.3s;
+  box-shadow: 0 2px 5px var(--box-shadow-color);
+}
+
+#theme-toggle:hover {
+  background-color: var(--btn-bg-hover);
+  transform: scale(1.1);
+  color: #fff;
+  box-shadow: 0 4px 12px var(--box-shadow-color);
+}
+
+#theme-toggle.animate {
+  transform: rotate(360deg) scale(1.3);
+}
+
+/* ===== Hero Section ===== */
+#hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: radial-gradient(circle at center, var(--header-bg), #0d0d0d);
+}
+
+#hero h2 {
+  font-size: 2.5rem;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.btn {
+  background: var(--btn-bg);
+  color: #fff;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: var(--btn-bg-hover);
+  box-shadow: 0 8px 15px var(--box-shadow-color);
+}
+
+/* ===== Section ===== */
+.section {
+  padding: 60px 0;
+}
+
+.section h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+[data-theme="light"] .section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+/* ===== Project Layout ===== */
+.project {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 20px;
+  background-color: var(--header-bg);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--box-shadow-color);
+  margin-bottom: 30px;
+}
+
+.project img,
+.project video.preview-video {
+  width: 280px;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin: 0;
+  position: relative;
+}
+.project-preview-wrapper video.preview-video {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.project > div:last-child {
+  flex: 1;
+  padding-top: 6px;
+}
+.project-preview-wrapper {
+  position: relative;
+  width: 280px;
+  height: 160px;
+  border-radius: 10px;
+  overflow: hidden; /* This keeps the video inside the container */
+  flex-shrink: 0;
+}
+
+.project-preview-wrapper img,
+.project-preview-wrapper video.preview-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+.project-link {
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.project-link:hover {
+  transform: scale(1.02);
+}
+
+[data-theme="light"] .project img,
+[data-theme="light"] .project video.preview-video {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project > div:last-child {
+    padding-top: 12px;
+  }
+
+  .project img,
+  .project video.preview-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ===== Footer ===== */
+footer {
+  background: var(--header-bg);
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  color: var(--footer-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+[data-theme="light"] header,
+[data-theme="light"] footer {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
