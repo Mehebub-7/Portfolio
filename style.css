@@ -56,6 +56,7 @@ a {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
+  position: relative;
 }
 
 /* ===== Header ===== */
@@ -63,6 +64,7 @@ header {
   background: var(--header-bg);
   padding: 20px 0;
   border-bottom: 1px solid var(--box-shadow-color);
+  position: relative;
 }
 
 header .container {
@@ -139,12 +141,13 @@ nav a:hover::after {
   height: 40px;
   font-size: 1.4rem;
   cursor: pointer;
-  margin-left: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s, transform 0.3s, color 0.3s;
   box-shadow: 0 2px 5px var(--box-shadow-color);
+  z-index: 1000;
+  margin-left: auto; /* push it to the end of the flex container */
 }
 
 #theme-toggle:hover {
@@ -318,6 +321,7 @@ footer {
     margin-bottom: 10px;
     white-space: normal;
     word-break: break-word;
+padding-left: 20px;
   }
 
   nav {
@@ -329,6 +333,7 @@ footer {
     gap: 12px;
     align-items: flex-start;
     padding-top: 10px;
+padding-left: 20px;
     flex-wrap: wrap;
     width: 100%;
   }
@@ -338,8 +343,11 @@ footer {
   }
 
   #theme-toggle {
-    align-self: flex-end;
-    margin-top: 10px;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    margin: 0;
+    z-index: 1000;
   }
 
   .project {
