@@ -212,12 +212,12 @@ nav a:hover::after {
   text-align: center;
 }
 
-[data-theme="light"] .section {
+[data-theme="light"] .project {
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  padding: 40px;
-  margin-bottom: 40px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 /* ===== Project Layout ===== */
@@ -289,6 +289,28 @@ nav a:hover::after {
 [data-theme="light"] .project img,
 [data-theme="light"] .project video.preview-video {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+a.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+a.project-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.project-link .project {
+  cursor: pointer;
+}
+
+.external-link {
+  color: var(--link-color);
+  font-weight: bold;
+}
+.external-link:hover{
+  text-decoration: underline;
 }
 
 /* ===== Footer ===== */
