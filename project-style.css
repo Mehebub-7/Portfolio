@@ -1,0 +1,247 @@
+/* ===== Theme Variables ===== */
+:root {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --primary-color: #00bfa6;
+  --header-bg: #1a1a1a;
+  --footer-color: #888;
+  --btn-bg: #00bfa6;
+  --btn-bg-hover: #00d6bb;
+  --link-color: #00bfa6;
+  --link-hover: #00d6bb;
+  --box-shadow-color: rgba(0, 191, 166, 0.2);
+}
+
+[data-theme="light"] {
+  --bg-color: #f5f7fa;
+  --text-color: #1e1e1e;
+  --primary-color: #1976d2;
+  --header-bg: #ffffff;
+  --footer-color: #555;
+  --btn-bg: #1976d2;
+  --btn-bg-hover: #0d47a1;
+  --link-color: #1976d2;
+  --link-hover: #0d47a1;
+  --box-shadow-color: rgba(25, 118, 210, 0.15);
+}
+
+/* ===== Base Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+header {
+  background: var(--header-bg);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--box-shadow-color);
+  animation: fadeInDown 0.6s ease-out;
+}
+
+header h1 a {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.75rem;
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header h1 a:hover {
+  color: var(--link-hover);
+}
+
+/* ===== Section & Titles ===== */
+.section {
+  padding: 40px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.section h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  text-align: center;
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.project-summary {
+  text-align: center;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.project-detail-preview video {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px var(--box-shadow-color);
+  animation: zoomIn 0.6s ease-out;
+}
+
+.project-description h3 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: var(--primary-color);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.project-description ul {
+  padding-left: 20px;
+}
+
+.project-description ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  animation: fadeInUp 0.4s ease forwards;
+  animation-delay: 0.7s;
+}
+
+.project-description p {
+  margin-top: 10px;
+  animation: fadeInUp 0.4s ease forwards;
+  animation-delay: 0.7s;
+}
+
+.project-description a {
+  color: var(--link-color);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.project-description a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.8s;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  background: var(--btn-bg);
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.9s;
+}
+
+.btn:hover {
+  background: var(--btn-bg-hover);
+  box-shadow: 0 8px 15px var(--box-shadow-color);
+  transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer {
+  background: var(--header-bg);
+  color: var(--footer-color);
+  padding: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  transition: background-color 0.3s, color 0.3s;
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 1s;
+}
+
+[data-theme="light"] header,
+[data-theme="light"] footer {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* ===== Keyframes ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ===== Responsive Fixes ===== */
+@media (max-width: 768px) {
+  .project-detail-preview video {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-summary,
+  .project-description {
+    padding: 0 10px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+}

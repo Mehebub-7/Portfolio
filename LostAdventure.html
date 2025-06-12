@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lost Adventure | Project Details</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+<script>
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+</script>
+<link rel="stylesheet" href="project-style.css" />
 </head>
 <body>
   <header>
     <div class="container">
-      <h1><a href="index.html" style="color: inherit; text-decoration: none;">← Back to Portfolio</a></h1>
+      <h1><a href="index.html">← Back to Portfolio</a></h1>
     </div>
   </header>
 
@@ -29,16 +33,24 @@
         <p> I led the development of the dynamic crafting system and implemented AI-driven wildlife interactions, enhancing both gameplay depth and realism.</p>
         <h3>Technologies</h3>
         <ul>
-          <li>Unity (URP)</li>
-          <li>C#</li>
-          <li>Cinemachine</li>
-          <li>Scriptable Objects</li>
-          <li>Node-based path for AI</li>
+          <li>Singleton Pattern : Implemented Singleton Pattern to ensure centralized control and global access to key systems including UI, gameplay, level, and audio management.</li>
+	  <li>Spritesheet : Collaborated with the UI artist to consolidate UI assets into a spritesheet for better optimization and rendering efficiency.</li>
+	  <li>Texture Atlas: Collaborated with the game artist to consolidate texture assets into a texture atlas for better optimization and rendering efficiency.</li>
+<li>Match3: Implemented a Match-3 game using NavMesh, where players must match candies to clear the path and progress forward.</li>
+<li>Bridge: Developed a bridge-building game with NavMesh, where players construct bridges to create a path across obstacles.</li>
+<li>SortAway: Created a directional cube-moving game where players must strategically move cubes to save fellow passengers.</li>
+<li>Bridge Puzzle: Built a bridge rotation puzzle game using NavMesh, where players rotate bridge parts to form a complete crossing path.</li>
+<li>Global Links: Designed a wire-connecting puzzle game where players link circuits to charge a phone before the battery drains, enabling them to call for help.</li>
+<li>Block Colors: Implemented a block-sorting game where players group boxes by color to clear a path and advance.</li>
+<li>Slide Puzzle: Developed a sliding rock puzzle game where players rearrange rocks to clear the way for rescuing trapped passengers.</li>
+<li>Mirror Puzzle: Created a mirror-based puzzle game where players rotate mirrors to direct a laser beam that cuts down trees blocking the path, rescuing stranded passengers.</li>
         </ul>
-
         <h3>Links</h3>
         <p>
-          <a href="https://play.google.com/store/apps/details?id=com.ultragames.LostAdventure&hl=en" target="_blank">Google Play Store</a>
+          <a href="https://play.google.com/store/apps/details?id=com.ultragames.LostAdventure&hl=en" target="_blank">Google Play Store</a> |
+          <a href="https://play.google.com/store/apps/details?id=com.Ultragames.SortAway" target="_blank">Sort Away</a> |
+          <a href="https://play.google.com/store/apps/details?id=com.ultragames.GlobalLinks" target="_blank">Global Links</a> |
+          <a href="https://play.google.com/store/apps/details?id=com.ultragames.BlockColours" target="_blank">Block Colors</a>
         </p>
       </div>
     </div>
