@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Slink.io 3D: Fun IO Snake Game | Project Details</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <script>
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+</script>
+<link rel="stylesheet" href="project-style.css" />
 </head>
 <body>
   <header>
     <div class="container">
-      <h1><a href="index.html" style="color: inherit; text-decoration: none;">← Back to Portfolio</a></h1>
+      <h1><a href="index.html">← Back to Portfolio</a></h1>
     </div>
   </header>
 
@@ -27,7 +31,6 @@
       <div class="project-description">
         <h3>My Role</h3>
         <p> I led the development of the AI snake using Physics Raycasting and implemented object pooling for food spawning. I also used the Observer Pattern to manage UI updates, animations, and power-up triggers.</p>
-        <br>
 <h3>Technologies</h3>
         <ul>
           <li>ScriptableObject : Implemented ScriptableObjects for modular and scalable level data management.</li>
@@ -35,8 +38,8 @@
           <li>Singleton Pattern : Implemented Singleton Pattern to ensure centralized control and global access to key systems including UI, gameplay, level, and audio management.</li>
 	  <li>Spritesheet : Collaborated with the UI artist to consolidate UI assets into a spritesheet for better optimization and rendering efficiency.</li>
 	  <li>Texture Atlas: Collaborated with the game artist to consolidate texture assets into a texture atlas for better optimization and rendering efficiency.</li>
-         <li>Object Pooling : Implemented Object Pooling to optimize performance during continuous spawning of foods and snakes.</li>        </ul>
-<br>
+         <li>Object Pooling : Implemented Object Pooling to optimize performance during continuous spawning of foods and snakes.</li>        
+</ul>
         <h3>Links</h3>
         <p>
           <a href="https://play.google.com/store/apps/details?id=com.apps2us.snake.io.slither&hl=en-IN" target="_blank">Google Play Store</a>

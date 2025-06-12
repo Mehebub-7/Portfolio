@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Image Crossword | Project Details</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <script>
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+</script>
+<link rel="stylesheet" href="project-style.css" />
 </head>
 <body>
   <header>
     <div class="container">
-      <h1><a href="index.html" style="color: inherit; text-decoration: none;">← Back to Portfolio</a></h1>
+      <h1><a href="index.html">← Back to Portfolio</a></h1>
     </div>
   </header>
 
@@ -27,7 +31,6 @@
       <div class="project-description">
         <h3>My Role</h3>
         <p> I led the development of the dynamic image-to-letter transformation system and implemented themed levels, enhancing both gameplay variety and cognitive engagement.</p>
-        <br>
         <h3>Technologies</h3>
         <ul>
           <li>ScriptableObject : Implemented ScriptableObjects for modular and scalable level data management.</li>
@@ -41,7 +44,6 @@
 <li>Google Play Asset Delivery: Implemented install-time and on-demand asset delivery to reduce Android game size and improve loading efficiency.</li>
 <li>JSON: Used JSON to store and manage data for custom levels created by users.</li>
         </ul>
-<br>
         <h3>Links</h3>
         <p>
           <a href="https://play.google.com/store/apps/details?id=com.ultragames.imagecrossword&hl=en" target="_blank">Google Play Store</a>
