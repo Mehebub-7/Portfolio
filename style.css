@@ -306,11 +306,18 @@ a.project-link .project {
 }
 
 .external-link {
-  color: var(--link-color);
   font-weight: bold;
 }
-.external-link:hover{
+
+.external-link a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.external-link a:hover {
   text-decoration: underline;
+  color: var(--btn-bg-hover); /* Optional: hover color */
 }
 
 /* ===== Footer ===== */
