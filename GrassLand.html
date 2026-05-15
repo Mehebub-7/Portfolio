@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grass Land | Project Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <script>
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
+  <link rel="stylesheet" href="project-style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="index.html"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg> Back to Portfolio</a></h1>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2>Grass Land</h2>
+      <p class="project-summary">An exploration game where players cut through dense greenery with a grass cutter, gather hidden resources, and build up a base across a sprawling wilderness.</p>
+
+      <div class="project-detail-preview">
+        <video src="Assets/GrassLand/video.mp4" controls muted loop style="width: 100%; max-width: 800px; border-radius: 10px;"></video>
+      </div>
+
+      <div class="project-description">
+        <h3>My Role</h3>
+        <p>Implemented monetization SDKs (Appodeal, Google AdMob, IronSource), In-App Purchases, analytics &amp; live-ops (Game Analytics, Firebase Analytics, Crashlytics, Firestore, Remote Config), Unity Addressables for on-demand asset delivery, and built a competitive multiplayer mode using Photon PUN2 where players compete head-to-head.</p>
+        <h3>Technologies</h3>
+        <ul>
+          <li>Appodeal : Integrated Appodeal SDK for ad mediation across multiple networks.</li>
+          <li>Google AdMob : Implemented banner, interstitial, and rewarded ad placements.</li>
+          <li>IronSource : Integrated IronSource SDK as an additional ad mediation source.</li>
+          <li>Unity IAP : Implemented in-app purchases for premium content and ad-removal upgrades.</li>
+          <li>Game Analytics : Implemented Game Analytics for player behavior tracking and funnel analysis.</li>
+          <li>Firebase Analytics : Integrated Firebase Analytics to capture in-game events and user metrics.</li>
+          <li>Firebase Crashlytics : Used Crashlytics to monitor and diagnose runtime crashes in production.</li>
+          <li>Firebase Firestore : Used Firestore for real-time data persistence (leaderboards, cloud save).</li>
+          <li>Firebase Remote Config : Tuned game parameters (difficulty, prices, events) without shipping app updates.</li>
+          <li>Addressables : Used Unity Addressables to load assets on-demand, reducing initial install size.</li>
+          <li>Photon PUN2 : Built real-time competitive multiplayer mode where players compete head-to-head.</li>
+        </ul>
+        <h3>Links</h3>
+        <p>
+          <a href="https://play.google.com/store/apps/details?id=com.ultragames.grassland" target="_blank" rel="noopener">Google Play Store</a>
+          |
+          <a href="https://apps.apple.com/us/app/grass-land/id6740054497" target="_blank" rel="noopener">Apple App Store</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -45,14 +45,13 @@ html, body {
 
 .container {
   width: 90%;
-  max-width: 1000px;
   margin: 0 auto;
 }
 
 /* ===== Header ===== */
 header {
   background: var(--header-bg);
-  padding: 20px 0;
+  padding: 8px 0;
   border-bottom: 1px solid var(--box-shadow-color);
   animation: fadeInDown 0.6s ease-out;
 }
@@ -63,6 +62,9 @@ header h1 a {
   color: var(--link-color);
   text-decoration: none;
   transition: color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 header h1 a:hover {
@@ -71,7 +73,7 @@ header h1 a:hover {
 
 /* ===== Section & Titles ===== */
 .section {
-  padding: 40px 0;
+  padding: 28px 0;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.6s ease forwards;
@@ -81,7 +83,7 @@ header h1 a:hover {
 .section h2 {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.8rem;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
   text-align: center;
   animation: fadeInUp 0.6s ease forwards;
   animation-delay: 0.4s;
@@ -90,7 +92,6 @@ header h1 a:hover {
 .project-summary {
   text-align: center;
   font-size: 1.1rem;
-  max-width: 800px;
   margin: 0 auto 30px;
   animation: fadeInUp 0.6s ease forwards;
   animation-delay: 0.5s;
