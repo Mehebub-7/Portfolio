@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mehebub Alli Khan | Unity Game Developer</title>
-  <meta name="description" content="Portfolio of Mehebub Alli Khan — Unity Game Developer with 3+ years building 3D games, hyper-casual, RPG, and card titles shipped on Google Play and the App Store."/>
+  <meta name="description" content="Portfolio of Mehebub Alli Khan — Unity Game Developer with 4 years and 50+ shipped titles — reusable frameworks, editor tooling, multiplayer and performance work on Google Play and the App Store."/>
   <meta name="keywords" content="Unity Game Developer, C#, Mehebub Alli Khan, Game Programmer, Mobile Games, WebGL, Unity Portfolio, Hyper Casual, RPG"/>
   <meta name="author" content="Mehebub Alli Khan"/>
 
@@ -12,18 +12,22 @@
 
   <meta property="og:type" content="website"/>
   <meta property="og:title" content="Mehebub Alli Khan | Unity Game Developer"/>
-  <meta property="og:description" content="3+ years of Unity & C# experience. 20+ commercial titles shipped on Google Play and the App Store."/>
+  <meta property="og:description" content="4 years of Unity &amp; C# experience. 50+ commercial titles shipped on Google Play and the App Store."/>
   <meta property="og:url" content="https://mehebub-7.github.io/Portfolio/"/>
   <meta property="og:image" content="https://mehebub-7.github.io/Portfolio/Assets/LostAdventure/icon.png"/>
 
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:title" content="Mehebub Alli Khan | Unity Game Developer"/>
-  <meta name="twitter:description" content="3+ years of Unity & C# experience. 20+ commercial titles shipped on Google Play and the App Store."/>
+  <meta name="twitter:description" content="4 years of Unity &amp; C# experience. 50+ commercial titles shipped on Google Play and the App Store."/>
   <meta name="twitter:image" content="https://mehebub-7.github.io/Portfolio/Assets/LostAdventure/icon.png"/>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <script>
+    // Applied before first paint so the stored theme doesn't flash the default.
+    document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
+  </script>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
+  <script src="vendor/gsap-3.15.0.min.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -65,7 +69,7 @@
   <section id="hero">
     <div class="container">
       <h2>Unity Game Developer</h2>
-      <p>Unity Game Developer with 3 years of experience building engaging gameplay systems, optimized mechanics, and cross-platform games using C# and Unity.</p>
+      <p>Unity developer with 4 years across two mobile studios and 50+ shipped commercial titles. I build the systems studios ship on — reusable frameworks, editor tooling that removes content bottlenecks, real-time multiplayer, and hard performance work.</p>
     </div>
   </section>
 
@@ -73,13 +77,15 @@
     <div class="container">
       <h2>Projects</h2>
 
+      <!-- build:projects:start -->
       <h3 class="project-group-heading">UltraGames Entertainment <span class="project-group-date">Feb 2024 — Present</span></h3>
+      <p class="project-group-note">Featured below. Full catalogue of 50+ shipped titles on Google Play. <a href="https://play.google.com/store/apps/dev?id=8943863732834633521" target="_blank" rel="noopener">View on Google Play</a></p>
       <div class="projects-grid">
         <div class="project">
           <a href="FrostLand.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/FrostLand/icon.png" alt="Frost Land" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/FrostLand/video.mp4"></video>
+              <img src="Assets/FrostLand/icon.png" alt="Frost Land" loading="lazy" decoding="async" width="1920" height="1080" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/FrostLand/video.mp4"></video>
             </div>
             <h3>Frost Land</h3>
           </a>
@@ -93,8 +99,8 @@
         <div class="project">
           <a href="GrassLand.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/GrassLand/icon.png" alt="Grass Land" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/GrassLand/video.mp4"></video>
+              <img src="Assets/GrassLand/icon.png" alt="Grass Land" loading="lazy" decoding="async" width="1920" height="1080" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/GrassLand/video.mp4"></video>
             </div>
             <h3>Grass Land</h3>
           </a>
@@ -108,8 +114,8 @@
         <div class="project">
           <a href="UnderwaterSurvivor.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/UnderwaterSurvivor/icon.png" alt="Underwater Survivor" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/UnderwaterSurvivor/video.mp4"></video>
+              <img src="Assets/UnderwaterSurvivor/icon.png" alt="Underwater Survivor" loading="lazy" decoding="async" width="1920" height="1080" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/UnderwaterSurvivor/video.mp4"></video>
             </div>
             <h3>Underwater Survivor</h3>
           </a>
@@ -121,13 +127,13 @@
         <div class="project">
           <a href="LostAdventure.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/LostAdventure/icon.png" alt="Lost Adventure" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/LostAdventure/video.mp4"></video>
+              <img src="Assets/LostAdventure/icon.png" alt="Lost Adventure" loading="lazy" decoding="async" width="1536" height="1024" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/LostAdventure/video.mp4"></video>
             </div>
             <h3>Lost Adventure</h3>
           </a>
           <div class="external-link">
-            <a href="https://play.google.com/store/apps/details?id=com.ultragames.LostAdventure&hl=en" target="_blank" rel="noopener">Google Play Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.ultragames.LostAdventure&amp;hl=en" target="_blank" rel="noopener">Google Play Store</a>
             |
             <a href="https://apps.apple.com/in/app/lost-adventure/id6475771865" target="_blank" rel="noopener">Apple App Store</a>
           </div>
@@ -136,13 +142,13 @@
         <div class="project">
           <a href="ImageCrossword.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/ImageCrossword/icon.png" alt="Image Crossword" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/ImageCrossword/video.mp4"></video>
+              <img src="Assets/ImageCrossword/icon.png" alt="Image Crossword" loading="lazy" decoding="async" width="1280" height="720" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/ImageCrossword/video.mp4"></video>
             </div>
             <h3>Image Crossword</h3>
           </a>
           <div class="external-link">
-            <a href="https://play.google.com/store/apps/details?id=com.ultragames.imagecrossword&hl=en" target="_blank" rel="noopener">Google Play Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.ultragames.imagecrossword&amp;hl=en" target="_blank" rel="noopener">Google Play Store</a>
             |
             <a href="https://apps.apple.com/in/app/image-crossword/id6475715852" target="_blank" rel="noopener">Apple App Store</a>
           </div>
@@ -151,34 +157,34 @@
         <div class="project">
           <a href="SnowRunner.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/SnowRunner/icon.png" alt="Snow Runner" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/SnowRunner/video.mp4"></video>
+              <img src="Assets/SnowRunner/icon.png" alt="Snow Runner" loading="lazy" decoding="async" width="1536" height="1024" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/SnowRunner/video.mp4"></video>
             </div>
             <h3>Snow Runner</h3>
           </a>
           <div class="external-link">
-            <a href="https://play.google.com/store/apps/details?id=com.Ultragames.SnowRunner&hl=en" target="_blank" rel="noopener">Google Play Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.Ultragames.SnowRunner&amp;hl=en" target="_blank" rel="noopener">Google Play Store</a>
           </div>
         </div>
 
         <div class="project">
           <a href="FoodSort3D.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/FoodSort3D/icon.png" alt="Food Sort 3D" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/FoodSort3D/video.mp4"></video>
+              <img src="Assets/FoodSort3D/icon.png" alt="Food Sort 3D" loading="lazy" decoding="async" width="1280" height="720" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/FoodSort3D/video.mp4"></video>
             </div>
             <h3>Food Sort 3D</h3>
           </a>
           <div class="external-link">
-            <a href="https://play.google.com/store/apps/details?id=com.Ultragames.FoodSort3D&hl=en" target="_blank" rel="noopener">Google Play Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.Ultragames.FoodSort3D&amp;hl=en" target="_blank" rel="noopener">Google Play Store</a>
           </div>
         </div>
 
         <div class="project">
           <a href="PokerHands.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/PokerHands/icon.png" alt="Poker Hands" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/PokerHands/video.mp4"></video>
+              <img src="Assets/PokerHands/icon.png" alt="Poker Hands" loading="lazy" decoding="async" width="1920" height="1080" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/PokerHands/video.mp4"></video>
             </div>
             <h3>Poker Hands</h3>
           </a>
@@ -192,8 +198,8 @@
         <div class="project">
           <a href="TeenPattiExpert.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/TeenPattiExpert/icon.png" alt="Teen Patti Expert" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/TeenPattiExpert/video.mp4"></video>
+              <img src="Assets/TeenPattiExpert/icon.png" alt="Teen Patti Expert" loading="lazy" decoding="async" width="1536" height="1024" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/TeenPattiExpert/video.mp4"></video>
             </div>
             <h3>Teen Patti Expert</h3>
           </a>
@@ -207,8 +213,8 @@
         <div class="project">
           <a href="ArmWrestler3D.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/ArmWrestler3D/icon.png" alt="Arm Wrestler 3D" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/ArmWrestler3D/video.mp4"></video>
+              <img src="Assets/ArmWrestler3D/icon.png" alt="Arm Wrestler 3D" loading="lazy" decoding="async" width="1920" height="1080" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/ArmWrestler3D/video.mp4"></video>
             </div>
             <h3>Arm Wrestler 3D</h3>
           </a>
@@ -220,8 +226,8 @@
         <div class="project">
           <a href="CrazyBarBrawl.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/CrazyBarBrawl/icon.png" alt="Crazy Bar Brawl" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/CrazyBarBrawl/video.mp4"></video>
+              <img src="Assets/CrazyBarBrawl/icon.png" alt="Crazy Bar Brawl" loading="lazy" decoding="async" width="1920" height="1080" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/CrazyBarBrawl/video.mp4"></video>
             </div>
             <h3>Crazy Bar Brawl</h3>
           </a>
@@ -233,8 +239,8 @@
         <div class="project">
           <a href="FoodTowerDefense.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/FoodTowerDefense/icon.png" alt="Food Tower Defense" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/FoodTowerDefense/video.mp4"></video>
+              <img src="Assets/FoodTowerDefense/icon.png" alt="Food Tower Defense" loading="lazy" decoding="async" width="1536" height="1024" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/FoodTowerDefense/video.mp4"></video>
             </div>
             <h3>Food Tower Defense</h3>
           </a>
@@ -248,8 +254,8 @@
         <div class="project">
           <a href="FrostDefense.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/FrostDefense/icon.png" alt="Frost Defense" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/FrostDefense/video.mp4"></video>
+              <img src="Assets/FrostDefense/icon.png" alt="Frost Defense" loading="lazy" decoding="async" width="1920" height="1080" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/FrostDefense/video.mp4"></video>
             </div>
             <h3>Frost Defense</h3>
           </a>
@@ -263,8 +269,8 @@
         <div class="project">
           <a href="GrassDefense.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/GrassDefense/icon.png" alt="Grass Defense" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/GrassDefense/video.mp4"></video>
+              <img src="Assets/GrassDefense/icon.png" alt="Grass Defense" loading="lazy" decoding="async" width="1920" height="1080" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/GrassDefense/video.mp4"></video>
             </div>
             <h3>Grass Defense</h3>
           </a>
@@ -276,8 +282,8 @@
         <div class="project">
           <a href="ZooKeeperIdle.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/ZooKeeperIdle/icon.png" alt="Zoo Keeper Idle" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/ZooKeeperIdle/video.mp4"></video>
+              <img src="Assets/ZooKeeperIdle/icon.png" alt="Zoo Keeper Idle" loading="lazy" decoding="async" width="1920" height="1080" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/ZooKeeperIdle/video.mp4"></video>
             </div>
             <h3>Zoo Keeper Idle</h3>
           </a>
@@ -289,8 +295,8 @@
         <div class="project">
           <a href="WarriorLand.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/WarriorLand/icon.png" alt="Warrior Land" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/WarriorLand/video.mp4"></video>
+              <img src="Assets/WarriorLand/icon.png" alt="Warrior Land" loading="lazy" decoding="async" width="1536" height="1024" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/WarriorLand/video.mp4"></video>
             </div>
             <h3>Warrior Land</h3>
           </a>
@@ -305,13 +311,13 @@
         <div class="project">
           <a href="NitroXtremeRacer.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/NitroXtremeRacer/icon.png" alt="Nitro Xtreme Racer" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/NitroXtremeRacer/video.mp4"></video>
+              <img src="Assets/NitroXtremeRacer/icon.png" alt="Nitro Xtreme Racer" loading="lazy" decoding="async" width="526" height="296" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/NitroXtremeRacer/video.mp4"></video>
             </div>
             <h3>Nitro Xtreme Racer</h3>
           </a>
           <div class="external-link">
-            <a href="https://play.google.com/store/apps/details?id=com.flyingcaps.max.car.drifting.games&hl=en-IN" target="_blank" rel="noopener">Google Play Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.flyingcaps.max.car.drifting.games&amp;hl=en-IN" target="_blank" rel="noopener">Google Play Store</a>
             |
             <a href="https://apps.apple.com/in/app/nitro-xtreme-racer-car-racing/id6450665399" target="_blank" rel="noopener">Apple App Store</a>
           </div>
@@ -320,8 +326,8 @@
         <div class="project">
           <a href="HighwayCarSimulator.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/HighwayCarSimulator/icon.png" alt="Real Traffic Car Driving Games" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/HighwayCarSimulator/video.mp4"></video>
+              <img src="Assets/HighwayCarSimulator/icon.png" alt="Real Traffic Car Driving Games" loading="lazy" decoding="async" width="526" height="296" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/HighwayCarSimulator/video.mp4"></video>
             </div>
             <h3>Real Traffic Car Driving Games</h3>
           </a>
@@ -333,8 +339,8 @@
         <div class="project">
           <a href="HighwayBikeSimulator.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/HighwayBikeSimulator/icon.png" alt="Real Traffic Bike Driving Game" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/HighwayBikeSimulator/video.mp4"></video>
+              <img src="Assets/HighwayBikeSimulator/icon.png" alt="Real Traffic Bike Driving Game" loading="lazy" decoding="async" width="526" height="296" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/HighwayBikeSimulator/video.mp4"></video>
             </div>
             <h3>Real Traffic Bike Driving Game</h3>
           </a>
@@ -346,29 +352,30 @@
         <div class="project">
           <a href="SlinkIO3D.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/SlinkIO3D/icon.png" alt="Slink.io 3D: Fun IO Snake Game" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/SlinkIO3D/video.mp4"></video>
+              <img src="Assets/SlinkIO3D/icon.png" alt="Slink.io 3D: Fun IO Snake Game" loading="lazy" decoding="async" width="526" height="296" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/SlinkIO3D/video.mp4"></video>
             </div>
             <h3>Slink.io 3D: Fun IO Snake Game</h3>
           </a>
           <div class="external-link">
-            <a href="https://play.google.com/store/apps/details?id=com.apps2us.snake.io.slither&hl=en-IN" target="_blank" rel="noopener">Google Play Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.apps2us.snake.io.slither&amp;hl=en-IN" target="_blank" rel="noopener">Google Play Store</a>
           </div>
         </div>
 
         <div class="project">
           <a href="MarblesMagic.html" class="project-link">
             <div class="project-preview-wrapper">
-              <img src="Assets/MarblesMagic/icon.png" alt="Marbles Magic: Marbles Games" />
-              <video class="preview-video" muted loop preload="metadata" src="Assets/MarblesMagic/video.mp4"></video>
+              <img src="Assets/MarblesMagic/icon.png" alt="Marbles Magic: Marbles Games" loading="lazy" decoding="async" width="1536" height="1024" />
+              <video class="preview-video" muted loop playsinline preload="none" src="Assets/MarblesMagic/video.mp4"></video>
             </div>
             <h3>Marbles Magic: Marbles Games</h3>
           </a>
           <div class="external-link">
-            <a href="https://play.google.com/store/apps/details?id=com.hikboo.jungle.zumba.marble&hl=en-IN" target="_blank" rel="noopener">Google Play Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.hikboo.jungle.zumba.marble&amp;hl=en-IN" target="_blank" rel="noopener">Google Play Store</a>
           </div>
         </div>
       </div>
+      <!-- build:projects:end -->
     </div>
   </section>
 
@@ -377,16 +384,17 @@
       <h2>About Me</h2>
       <div class="about-content">
         <div class="about-text">
-          <p>Over the past 3+ years I've shipped 20+ titles at <strong>UltraGames Entertainment</strong> and <strong>FlyingCaps Technologies</strong>, leading core gameplay systems, level editors, and live-service integrations.</p>
-          <p>I gravitate toward problems where the right tool unlocks a bottleneck — most recently, a custom Unity Editor that turned weeks of manual level authoring into a one-day job for the design team.</p>
+          <p>Over the past 4 years I've shipped 50+ titles at <strong>UltraGames Entertainment</strong> and <strong>FlyingCaps Technologies</strong>, building core gameplay systems, editor tooling, and live-service integrations. 21 are featured below.</p>
+          <p>I gravitate toward problems where the right tool unlocks a bottleneck — a custom Unity editor that turned weeks of manual level authoring into a one-day job for the design team, and a reusable framework covering monetization, analytics and game-flow UI that new titles start from instead of rebuilding each time.</p>
+          <p>The other half of that is performance: cutting a build from <strong>200&nbsp;MB on Android to 20&nbsp;MB on WebGL</strong> with Addressables and asset optimization, and keeping games running well on low-end hardware.</p>
         </div>
         <div class="about-stats">
           <div class="stat-card">
-            <span class="stat-num">20+</span>
+            <span class="stat-num">50+</span>
             <span class="stat-label">Shipped Titles</span>
           </div>
           <div class="stat-card">
-            <span class="stat-num">3+</span>
+            <span class="stat-num">4</span>
             <span class="stat-label">Years Experience</span>
           </div>
           <div class="stat-card">
@@ -407,43 +415,75 @@
       <h2>Skills</h2>
       <div class="skills-grid">
         <div class="skill-category">
-          <h3>Engine &amp; Languages</h3>
+          <h3>Engine &amp; Language</h3>
           <ul>
             <li>Unity</li>
             <li>C#</li>
+            <li>Editor Scripting</li>
+            <li>ScriptableObjects</li>
+            <li>Shader Graph</li>
+            <li>Cinemachine</li>
+            <li>Addressables</li>
           </ul>
         </div>
         <div class="skill-category">
-          <h3>Unity Systems</h3>
+          <h3>Gameplay Systems</h3>
           <ul>
-            <li>Cinemachine</li>
-            <li>Scriptable Objects</li>
-            <li>Shader Graph</li>
-            <li>Editor Scripting</li>
-            <li>Navmesh AI</li>
+            <li>NavMesh AI</li>
             <li>Physics Raycast</li>
+            <li>State Machines</li>
             <li>Animation &amp; Timeline</li>
             <li>Particle Systems</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3>Patterns &amp; Architecture</h3>
-          <ul>
-            <li>Singleton</li>
-            <li>Observer</li>
             <li>Object Pooling</li>
-            <li>State Machines</li>
-            <li>MVC / Modular Systems</li>
+            <li>DOTween</li>
           </ul>
         </div>
         <div class="skill-category">
-          <h3>Backend &amp; SDKs</h3>
+          <h3>Architecture &amp; Tooling</h3>
+          <ul>
+            <li>Reusable Package Design</li>
+            <li>Custom Editor Tools</li>
+            <li>Level-Generation Pipelines</li>
+            <li>Modular Systems</li>
+            <li>Event-Driven Architecture</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Multiplayer</h3>
+          <ul>
+            <li>Photon PUN2</li>
+            <li>Real-Time PvP</li>
+            <li>Matchmaking</li>
+            <li>Lobby &amp; Room Management</li>
+            <li>State Synchronization</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Optimization</h3>
+          <ul>
+            <li>Unity Profiler</li>
+            <li>Draw Call Reduction</li>
+            <li>Batching</li>
+            <li>GC Allocation Reduction</li>
+            <li>Memory &amp; Texture Optimization</li>
+            <li>Build Size &amp; Load Time</li>
+            <li>Low-End Android</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Backend &amp; Live-Ops</h3>
           <ul>
             <li>Firebase Firestore</li>
-            <li>Firebase Crashlytics</li>
+            <li>Crashlytics</li>
             <li>Firebase Analytics</li>
             <li>Remote Config</li>
             <li>Game Analytics</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Monetization</h3>
+          <ul>
+            <li>Appodeal</li>
             <li>Google AdMob</li>
             <li>IronSource</li>
             <li>In-App Purchases</li>
@@ -451,20 +491,15 @@
           </ul>
         </div>
         <div class="skill-category">
-          <h3>Platforms</h3>
+          <h3>Platforms &amp; Tools</h3>
           <ul>
             <li>Android</li>
             <li>iOS</li>
             <li>WebGL</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3>Tools</h3>
-          <ul>
-            <li>Git</li>
             <li>Plastic SCM</li>
-            <li>Blender</li>
-            <li>Photoshop</li>
+            <li>Git</li>
+            <li>Play Console</li>
+            <li>App Store Connect</li>
           </ul>
         </div>
       </div>
@@ -475,9 +510,9 @@
   <div class="container">
     <h2>Resume</h2>
     <ul class="resume-list">
-      <li><strong>Game Developer</strong> – Ultra Games Entertainment (Feb 2024 - Present)<br/>Worked on Hyper Casual, Puzzle, RPG, Card games for Mobile and WebGL Platforms.</li>
-      <li><strong>Game Developer</strong> – FlyingCaps Technologies (Sep 2022 - Feb 2024)<br/>Worked on Car Racing, Car & Bike Simulator, Hyper Casual, Puzzle games for Mobile and WebGL Platforms.</li>
-      <li><strong>Bachelor in Computer Application</strong> – Nabapravat Academy for Management Education (Graduated: 2022)</li>
+        <li><strong>Senior Unity Game Developer</strong> &ndash; UltraGames Entertainment (Feb 2024 &ndash; Present)<br/>Built the reusable framework behind a 50+ title catalogue, a Unity level-generation tool, real-time PvP on Photon PUN2, and the analytics and live-ops layer. Hyper-casual, puzzle, RPG and card games for mobile and WebGL.</li>
+        <li><strong>Junior Unity Game Developer</strong> &ndash; FlyingCaps Technologies (Sep 2022 &ndash; Jan 2024)<br/>Core gameplay systems for racing and driving titles &mdash; racing logic, drift detection, traffic AI, and a ScriptableObject content pipeline covering hundreds of levels and vehicles.</li>
+        <li><strong>Bachelor of Computer Applications (BCA)</strong> &ndash; Nabapravat Academy for Management Education (Graduated 2022)</li>
     </ul>
     <div style="margin-top: 20px; text-align: center;">
       <a href="Assets/MehebubAlliKhan_GameDeveloper.pdf" class="btn btn-icon" download>

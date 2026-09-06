@@ -4,10 +4,9 @@ window.addEventListener("DOMContentLoaded", () => {
   gsap.from("#hero h2", { x: -100, opacity: 0, duration: 1, delay: 0.5 });
   gsap.from("#hero p", { x: 100, opacity: 0, duration: 1, delay: 0.7 });
 
-  // Theme toggle setup
+  // Theme toggle. The initial data-theme is applied by the inline guard in
+  // <head> so there is no flash of the default theme before this runs.
   const toggleBtn = document.getElementById("theme-toggle");
-  const currentTheme = localStorage.getItem("theme") || "dark";
-  document.documentElement.setAttribute("data-theme", currentTheme);
 
   toggleBtn.addEventListener("click", () => {
     toggleBtn.classList.add("animate");

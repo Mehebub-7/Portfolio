@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    GENERATED FILE - DO NOT EDIT.
+    Built by tools/build.js from data/projects.json + templates/project.html.
+    Edit those, then run: npm run build
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{title}} | Project Details</title>
+  <meta name="description" content="{{metaDescription}}" />
+  <meta name="author" content="{{author}}" />
+  <link rel="canonical" href="{{canonical}}" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{title}} | {{author}}" />
+  <meta property="og:description" content="{{metaDescription}}" />
+  <meta property="og:url" content="{{canonical}}" />
+  <meta property="og:image" content="{{ogImage}}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{title}} | {{author}}" />
+  <meta name="twitter:description" content="{{metaDescription}}" />
+  <meta name="twitter:image" content="{{ogImage}}" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <script>
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
+  <link rel="stylesheet" href="project-style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="index.html"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg> Back to Portfolio</a></h1>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2>{{title}}</h2>
+      <p class="project-summary">{{summary}}</p>
+
+      <div class="project-detail-preview">
+        <video src="{{video}}" controls muted loop playsinline preload="metadata"></video>
+      </div>
+
+      <div class="project-description">
+        <h3>My Role</h3>
+        <p>{{role}}</p>
+        <h3>Technologies</h3>
+        <ul>
+{{techList}}
+        </ul>
+        <h3>Links</h3>
+        <p>
+{{links}}
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "description": "Static portfolio for Mehebub Alli Khan — Unity Game Developer.",
+  "scripts": {
+    "start": "node tools/serve.js",
+    "build": "node tools/build.js",
+    "check": "node tools/build.js --check"
+  }
+}

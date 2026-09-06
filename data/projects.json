@@ -1,0 +1,1237 @@
+{
+  "site": {
+    "baseUrl": "https://mehebub-7.github.io/Portfolio/",
+    "author": "Mehebub Alli Khan",
+    "role": "Unity Game Developer",
+    "shippedTitles": "50+",
+    "catalogueUrl": "https://play.google.com/store/apps/dev?id=8943863732834633521"
+  },
+  "groups": [
+    {
+      "company": "UltraGames Entertainment",
+      "dates": "Feb 2024 — Present",
+      "projects": [
+        {
+          "slug": "FrostLand",
+          "title": "Frost Land",
+          "summary": "A strategic snow-survival game where players wield a flamethrower to melt ice, gather resources, and expand a shelter against an endless winter and arctic threats.",
+          "role": "Built the flamethrower-based snow-melting mechanic, base expansion progression, and resource management systems. Integrated the full live-ops stack (Appodeal, Google AdMob, IronSource ads; Firebase Analytics, Crashlytics, Remote Config), In-App Purchases, and Unity Addressables for on-demand asset delivery.",
+          "tech": [
+            {
+              "name": "Shader Graph",
+              "detail": "Built the snow-melting visual effect driven by the flamethrower."
+            },
+            {
+              "name": "Particle Systems",
+              "detail": "Created flame, steam, and resource-pickup effects."
+            },
+            {
+              "name": "Object Pooling",
+              "detail": "Spawned resources and enemies efficiently across the open map."
+            },
+            {
+              "name": "ScriptableObjects",
+              "detail": "Stored resource, enemy, and upgrade data."
+            },
+            {
+              "name": "Appodeal",
+              "detail": "Integrated Appodeal SDK for ad mediation across multiple networks."
+            },
+            {
+              "name": "Google AdMob",
+              "detail": "Implemented banner, interstitial, and rewarded ad placements."
+            },
+            {
+              "name": "IronSource",
+              "detail": "Integrated IronSource SDK as an additional ad mediation source."
+            },
+            {
+              "name": "Unity IAP",
+              "detail": "Implemented in-app purchases for premium content and ad-removal upgrades."
+            },
+            {
+              "name": "Game Analytics",
+              "detail": "Implemented Game Analytics for player behavior tracking and funnel analysis."
+            },
+            {
+              "name": "Firebase Analytics",
+              "detail": "Integrated Firebase Analytics to capture in-game events and user metrics."
+            },
+            {
+              "name": "Firebase Crashlytics",
+              "detail": "Used Crashlytics to monitor and diagnose runtime crashes in production."
+            },
+            {
+              "name": "Firebase Firestore",
+              "detail": "Used Firestore for real-time data persistence (leaderboards, cloud save)."
+            },
+            {
+              "name": "Firebase Remote Config",
+              "detail": "Tuned game parameters (difficulty, prices, events) without shipping app updates."
+            },
+            {
+              "name": "Addressables",
+              "detail": "Used Unity Addressables to load assets on-demand, reducing initial install size."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.ultragames.frostland"
+            },
+            {
+              "label": "Apple App Store",
+              "url": "https://apps.apple.com/in/app/frost-land-snow-survival/id6450498325"
+            }
+          ]
+        },
+        {
+          "slug": "GrassLand",
+          "title": "Grass Land",
+          "summary": "An exploration game where players cut through dense greenery with a grass cutter, gather hidden resources, and build up a base across a sprawling wilderness.",
+          "role": "Built the grass-cutter upgrade system, resource gathering loop, and base expansion progression. Implemented a competitive multiplayer mode using Photon PUN2 where players compete head-to-head, alongside the full live-ops and monetization stack.",
+          "tech": [
+            {
+              "name": "Photon PUN2",
+              "detail": "Built real-time competitive multiplayer mode where players compete head-to-head."
+            },
+            {
+              "name": "ScriptableObjects",
+              "detail": "Stored resource, upgrade, and machine data."
+            },
+            {
+              "name": "Object Pooling",
+              "detail": "Spawned grass patches and resource instances efficiently."
+            },
+            {
+              "name": "Coroutines",
+              "detail": "Managed grass-cutter fuel depletion and base progression."
+            },
+            {
+              "name": "Appodeal",
+              "detail": "Integrated Appodeal SDK for ad mediation across multiple networks."
+            },
+            {
+              "name": "Google AdMob",
+              "detail": "Implemented banner, interstitial, and rewarded ad placements."
+            },
+            {
+              "name": "IronSource",
+              "detail": "Integrated IronSource SDK as an additional ad mediation source."
+            },
+            {
+              "name": "Unity IAP",
+              "detail": "Implemented in-app purchases for premium content and ad-removal upgrades."
+            },
+            {
+              "name": "Game Analytics",
+              "detail": "Implemented Game Analytics for player behavior tracking and funnel analysis."
+            },
+            {
+              "name": "Firebase Analytics",
+              "detail": "Integrated Firebase Analytics to capture in-game events and user metrics."
+            },
+            {
+              "name": "Firebase Crashlytics",
+              "detail": "Used Crashlytics to monitor and diagnose runtime crashes in production."
+            },
+            {
+              "name": "Firebase Firestore",
+              "detail": "Used Firestore for real-time data persistence (leaderboards, cloud save)."
+            },
+            {
+              "name": "Firebase Remote Config",
+              "detail": "Tuned game parameters (difficulty, prices, events) without shipping app updates."
+            },
+            {
+              "name": "Addressables",
+              "detail": "Used Unity Addressables to load assets on-demand, reducing initial install size."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.ultragames.grassland"
+            },
+            {
+              "label": "Apple App Store",
+              "url": "https://apps.apple.com/us/app/grass-land/id6740054497"
+            }
+          ]
+        },
+        {
+          "slug": "UnderwaterSurvivor",
+          "title": "Underwater Survivor",
+          "summary": "An underwater survival adventure where players dive into a vibrant ocean, gather resources, and build a deep-sea base across coral reefs and unexplored depths.",
+          "role": "Built oxygen and resource-gathering mechanics, deep-sea base progression, and underwater exploration systems. Integrated the full live-ops and monetization stack (ads, IAP, analytics, Unity Addressables).",
+          "tech": [
+            {
+              "name": "Shader Graph",
+              "detail": "Built underwater color, distortion, and caustic effects."
+            },
+            {
+              "name": "Particle Systems",
+              "detail": "Created bubble, water, and creature effects."
+            },
+            {
+              "name": "Coroutines",
+              "detail": "Managed oxygen depletion and resource regeneration timers."
+            },
+            {
+              "name": "ScriptableObjects",
+              "detail": "Stored creature, resource, and base-tier data."
+            },
+            {
+              "name": "Appodeal",
+              "detail": "Integrated Appodeal SDK for ad mediation across multiple networks."
+            },
+            {
+              "name": "Google AdMob",
+              "detail": "Implemented banner, interstitial, and rewarded ad placements."
+            },
+            {
+              "name": "IronSource",
+              "detail": "Integrated IronSource SDK as an additional ad mediation source."
+            },
+            {
+              "name": "Unity IAP",
+              "detail": "Implemented in-app purchases for premium content and ad-removal upgrades."
+            },
+            {
+              "name": "Game Analytics",
+              "detail": "Implemented Game Analytics for player behavior tracking and funnel analysis."
+            },
+            {
+              "name": "Firebase Analytics",
+              "detail": "Integrated Firebase Analytics to capture in-game events and user metrics."
+            },
+            {
+              "name": "Firebase Crashlytics",
+              "detail": "Used Crashlytics to monitor and diagnose runtime crashes in production."
+            },
+            {
+              "name": "Firebase Firestore",
+              "detail": "Used Firestore for real-time data persistence (leaderboards, cloud save)."
+            },
+            {
+              "name": "Firebase Remote Config",
+              "detail": "Tuned game parameters (difficulty, prices, events) without shipping app updates."
+            },
+            {
+              "name": "Addressables",
+              "detail": "Used Unity Addressables to load assets on-demand, reducing initial install size."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.ultragames.underwatersurvivor"
+            }
+          ]
+        },
+        {
+          "slug": "LostAdventure",
+          "title": "Lost Adventure",
+          "summary": "An immersive survival adventure game where players, as the sole survivor of a mid-air crash, navigate a mysterious land to rescue stranded passengers.",
+          "role": "I led the development of the dynamic crafting system and implemented AI-driven wildlife interactions, enhancing both gameplay depth and realism.",
+          "tech": [
+            {
+              "name": "Singleton Pattern",
+              "detail": "Implemented Singleton Pattern to ensure centralized control and global access to key systems including UI, gameplay, level, and audio management."
+            },
+            {
+              "name": "Spritesheet",
+              "detail": "Collaborated with the UI artist to consolidate UI assets into a spritesheet for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Texture Atlas",
+              "detail": "Collaborated with the game artist to consolidate texture assets into a texture atlas for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Match3",
+              "detail": "Implemented a Match-3 game using NavMesh, where players must match candies to clear the path and progress forward."
+            },
+            {
+              "name": "Bridge",
+              "detail": "Developed a bridge-building game with NavMesh, where players construct bridges to create a path across obstacles."
+            },
+            {
+              "name": "SortAway",
+              "detail": "Created a directional cube-moving game where players must strategically move cubes to save fellow passengers."
+            },
+            {
+              "name": "Bridge Puzzle",
+              "detail": "Built a bridge rotation puzzle game using NavMesh, where players rotate bridge parts to form a complete crossing path."
+            },
+            {
+              "name": "Global Links",
+              "detail": "Designed a wire-connecting puzzle game where players link circuits to charge a phone before the battery drains, enabling them to call for help."
+            },
+            {
+              "name": "Block Colors",
+              "detail": "Implemented a block-sorting game where players group boxes by color to clear a path and advance."
+            },
+            {
+              "name": "Slide Puzzle",
+              "detail": "Developed a sliding rock puzzle game where players rearrange rocks to clear the way for rescuing trapped passengers."
+            },
+            {
+              "name": "Mirror Puzzle",
+              "detail": "Created a mirror-based puzzle game where players rotate mirrors to direct a laser beam that cuts down trees blocking the path, rescuing stranded passengers."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.ultragames.LostAdventure&hl=en"
+            },
+            {
+              "label": "Apple App Store",
+              "url": "https://apps.apple.com/in/app/lost-adventure/id6475771865"
+            }
+          ],
+          "moreLinks": [
+            {
+              "label": "Sort Away",
+              "url": "https://play.google.com/store/apps/details?id=com.Ultragames.SortAway"
+            },
+            {
+              "label": "Global Links",
+              "url": "https://play.google.com/store/apps/details?id=com.ultragames.GlobalLinks"
+            },
+            {
+              "label": "Block Colors",
+              "url": "https://play.google.com/store/apps/details?id=com.ultragames.BlockColours"
+            }
+          ]
+        },
+        {
+          "slug": "ImageCrossword",
+          "title": "Image Crossword",
+          "summary": "An innovative word puzzle game where images transform into letters, challenging players to form words based on visual clues.",
+          "role": "I led the development of the dynamic image-to-letter transformation system and implemented themed levels, enhancing both gameplay variety and cognitive engagement.",
+          "tech": [
+            {
+              "name": "ScriptableObject",
+              "detail": "Implemented ScriptableObjects for modular and scalable level data management."
+            },
+            {
+              "name": "Singleton Pattern",
+              "detail": "Implemented Singleton Pattern to ensure centralized control and global access to key systems including UI, gameplay, level, and audio management."
+            },
+            {
+              "name": "Spritesheet",
+              "detail": "Collaborated with the UI artist to consolidate UI assets into a spritesheet for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Texture Atlas",
+              "detail": "Collaborated with the game artist to consolidate texture assets into a texture atlas for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Editor Scripting",
+              "detail": "Created a level generator tool using Editor Scripting, enabling designers to build 400 levels in 2 weeks—compared to just 60 levels in the same time frame previously."
+            },
+            {
+              "name": "Asset Bundles",
+              "detail": "Utilized Asset Bundles to reduce initial game size and support modular content loading."
+            },
+            {
+              "name": "OpenAI API",
+              "detail": "Integrated the OpenAI API to dynamically generate images for custom user-created levels."
+            },
+            {
+              "name": "Firebase Firestore",
+              "detail": "Used Firestore to store and retrieve real-time leaderboard data."
+            },
+            {
+              "name": "Google Play Asset Delivery",
+              "detail": "Implemented install-time and on-demand asset delivery to reduce Android game size and improve loading efficiency."
+            },
+            {
+              "name": "JSON",
+              "detail": "Used JSON to store and manage data for custom levels created by users."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.ultragames.imagecrossword&hl=en"
+            },
+            {
+              "label": "Apple App Store",
+              "url": "https://apps.apple.com/in/app/image-crossword/id6475715852"
+            }
+          ]
+        },
+        {
+          "slug": "SnowRunner",
+          "title": "Snow Runner",
+          "summary": "An engaging winter-themed action game where players wield a powerful flamethrower to melt their way through snow-covered landscapes and icy obstacles.",
+          "role": "I led the development of the dynamic level progression system and implemented various power-ups to enhance gameplay strategy.",
+          "tech": [
+            {
+              "name": "Singleton Pattern",
+              "detail": "Implemented Singleton Pattern to ensure centralized control and global access to key systems including UI, gameplay, level, and audio management."
+            },
+            {
+              "name": "Spritesheet",
+              "detail": "Collaborated with the UI artist to consolidate UI assets into a spritesheet for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Texture Atlas",
+              "detail": "Collaborated with the game artist to consolidate texture assets into a texture atlas for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Editor Scripting",
+              "detail": "Created a level generator tool to streamline level design and development."
+            },
+            {
+              "name": "ScriptableObject",
+              "detail": "Used ScriptableObjects to store and manage weapon data efficiently."
+            },
+            {
+              "name": "Merging",
+              "detail": "Merged the project with an existing RPG game, ensuring seamless integration of assets and systems."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.Ultragames.SnowRunner&hl=en"
+            }
+          ]
+        },
+        {
+          "slug": "FoodSort3D",
+          "title": "Food Sort 3D",
+          "summary": "A vibrant food sorting simulation game where players manage a food court by categorizing various food items into their respective categories.",
+          "role": "I led the development of the dynamic level progression system and implemented a variety of eateries, from fast-food joints to upscale restaurants, each requiring unique sorting challenges.",
+          "tech": [
+            {
+              "name": "Singleton Pattern",
+              "detail": "Implemented Singleton Pattern to ensure centralized control and global access to key systems including UI, gameplay, level, and audio management."
+            },
+            {
+              "name": "Spritesheet",
+              "detail": "Collaborated with the UI artist to consolidate UI assets into a spritesheet for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Texture Atlas",
+              "detail": "Collaborated with the game artist to consolidate texture assets into a texture atlas for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Editor Scripting",
+              "detail": "Created a level generator tool to help designers build levels more efficiently and quickly."
+            },
+            {
+              "name": "Coroutine-Based Movement",
+              "detail": "Used coroutines for customer movement instead of the Update method, as movement was event-driven—triggered only when a customer completed their order or a queue spot became available."
+            },
+            {
+              "name": "Stack",
+              "detail": "Used the stack data structure to manage food stacking mechanics, which formed the core gameplay concept."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.Ultragames.FoodSort3D&hl=en"
+            }
+          ]
+        },
+        {
+          "slug": "PokerHands",
+          "title": "Poker Hands",
+          "summary": "An innovative poker training game that challenges players to predict the best possible hands using probability-based multipliers.",
+          "role": "I led the development of the dynamic betting system, allowing players to place bets at various stages (pre-flop, post-flop, or after the turn), and implemented the Star Value currency system to automate bets and balance profits or losses across all hands.",
+          "tech": [
+            {
+              "name": "Singleton Pattern",
+              "detail": "Implemented Singleton Pattern to ensure centralized control and global access to key systems including UI, gameplay, level, and audio management."
+            },
+            {
+              "name": "Spritesheet",
+              "detail": "Collaborated with the UI artist to consolidate UI assets into a spritesheet for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Texture Atlas",
+              "detail": "Collaborated with the game artist to consolidate texture assets into a texture atlas for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Probability Algorithms",
+              "detail": "Developed probability algorithms to handle all variations of the poker game logic."
+            },
+            {
+              "name": "Firebase Firestore",
+              "detail": "Utilized Firebase Firestore to store and manage real-time leaderboard data."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.ultragames.handmasterpoker"
+            },
+            {
+              "label": "Apple App Store",
+              "url": "https://apps.apple.com/in/app/poker-hands/id6657983750"
+            }
+          ]
+        },
+        {
+          "slug": "TeenPattiExpert",
+          "title": "Teen Patti Expert",
+          "summary": "An immersive digital recreation of the classic Indian card game, Teen Patti, offering multiple game modes like FixAlter, Muflis, Assume1, and Discard1.",
+          "role": "I led the development of the dynamic betting system and implemented a robust leaderboard feature to enhance competitive gameplay.",
+          "tech": [
+            {
+              "name": "Singleton Pattern",
+              "detail": "Implemented Singleton Pattern to ensure centralized control and global access to key systems including UI, gameplay, level, and audio management."
+            },
+            {
+              "name": "Spritesheet",
+              "detail": "Collaborated with the UI artist to consolidate UI assets into a spritesheet for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Texture Atlas",
+              "detail": "Collaborated with the game artist to consolidate texture assets into a texture atlas for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Probability Algorithms",
+              "detail": "Developed probability algorithms to handle all variations of the poker game logic."
+            },
+            {
+              "name": "Firebase Firestore",
+              "detail": "Utilized Firebase Firestore to store and manage real-time leaderboard data."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.ultragames.teenpattiexpert"
+            },
+            {
+              "label": "Apple App Store",
+              "url": "https://apps.apple.com/in/app/3-patti-expert/id6740073130"
+            }
+          ]
+        },
+        {
+          "slug": "ArmWrestler3D",
+          "title": "Arm Wrestler 3D",
+          "summary": "A 3D arm-wrestling simulator where players train their strength, master timing-based mechanics, and climb the ranks to become the ultimate champion.",
+          "role": "Built the timing-based input mechanic, opponent ladder progression, and strength upgrade system for the 3D arm-wrestling simulator. Integrated the full live-ops and monetization stack (ads, IAP, analytics, Unity Addressables).",
+          "tech": [
+            {
+              "name": "Inverse Kinematics",
+              "detail": "Used IK to drive realistic arm-wrestling poses and motion."
+            },
+            {
+              "name": "ScriptableObjects",
+              "detail": "Stored opponent stats and upgrade data."
+            },
+            {
+              "name": "DOTween",
+              "detail": "Built UI and result-screen animations."
+            },
+            {
+              "name": "Singleton Pattern",
+              "detail": "Managed match state and global game flow."
+            },
+            {
+              "name": "Appodeal",
+              "detail": "Integrated Appodeal SDK for ad mediation across multiple networks."
+            },
+            {
+              "name": "Google AdMob",
+              "detail": "Implemented banner, interstitial, and rewarded ad placements."
+            },
+            {
+              "name": "IronSource",
+              "detail": "Integrated IronSource SDK as an additional ad mediation source."
+            },
+            {
+              "name": "Unity IAP",
+              "detail": "Implemented in-app purchases for premium content and ad-removal upgrades."
+            },
+            {
+              "name": "Game Analytics",
+              "detail": "Implemented Game Analytics for player behavior tracking and funnel analysis."
+            },
+            {
+              "name": "Firebase Analytics",
+              "detail": "Integrated Firebase Analytics to capture in-game events and user metrics."
+            },
+            {
+              "name": "Firebase Crashlytics",
+              "detail": "Used Crashlytics to monitor and diagnose runtime crashes in production."
+            },
+            {
+              "name": "Firebase Firestore",
+              "detail": "Used Firestore for real-time data persistence (leaderboards, cloud save)."
+            },
+            {
+              "name": "Firebase Remote Config",
+              "detail": "Tuned game parameters (difficulty, prices, events) without shipping app updates."
+            },
+            {
+              "name": "Addressables",
+              "detail": "Used Unity Addressables to load assets on-demand, reducing initial install size."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.ultragames.ArmWrestler3D"
+            }
+          ]
+        },
+        {
+          "slug": "CrazyBarBrawl",
+          "title": "Crazy Bar Brawl",
+          "summary": "A chaotic ragdoll-physics brawler where players throw bottles, food, and bar tools at rowdy enemies across pubs, clubs, and dive bars.",
+          "role": "Implemented the throwable-projectile system across multiple weapon types (bottles, food, bar tools) with ragdoll-physics enemy reactions, plus the bar environment progression. Integrated the full live-ops and monetization stack (ads, IAP, analytics, Unity Addressables).",
+          "tech": [
+            {
+              "name": "Ragdoll Physics",
+              "detail": "Drove the enemy reaction and collision feedback system."
+            },
+            {
+              "name": "Object Pooling",
+              "detail": "Managed throwable projectiles across rapid throw sequences."
+            },
+            {
+              "name": "Particle Systems",
+              "detail": "Created impact, smash, and breakage effects."
+            },
+            {
+              "name": "ScriptableObjects",
+              "detail": "Stored throwable, enemy, and environment data."
+            },
+            {
+              "name": "Appodeal",
+              "detail": "Integrated Appodeal SDK for ad mediation across multiple networks."
+            },
+            {
+              "name": "Google AdMob",
+              "detail": "Implemented banner, interstitial, and rewarded ad placements."
+            },
+            {
+              "name": "IronSource",
+              "detail": "Integrated IronSource SDK as an additional ad mediation source."
+            },
+            {
+              "name": "Unity IAP",
+              "detail": "Implemented in-app purchases for premium content and ad-removal upgrades."
+            },
+            {
+              "name": "Game Analytics",
+              "detail": "Implemented Game Analytics for player behavior tracking and funnel analysis."
+            },
+            {
+              "name": "Firebase Analytics",
+              "detail": "Integrated Firebase Analytics to capture in-game events and user metrics."
+            },
+            {
+              "name": "Firebase Crashlytics",
+              "detail": "Used Crashlytics to monitor and diagnose runtime crashes in production."
+            },
+            {
+              "name": "Firebase Firestore",
+              "detail": "Used Firestore for real-time data persistence (leaderboards, cloud save)."
+            },
+            {
+              "name": "Firebase Remote Config",
+              "detail": "Tuned game parameters (difficulty, prices, events) without shipping app updates."
+            },
+            {
+              "name": "Addressables",
+              "detail": "Used Unity Addressables to load assets on-demand, reducing initial install size."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.ultragames.crazybarbrawl"
+            }
+          ]
+        },
+        {
+          "slug": "FoodTowerDefense",
+          "title": "Food Tower Defense",
+          "summary": "A tower defense game where players defend their kitchen from waves of hungry invaders using food-themed towers — burger mortars, fries shooters, hot-dog snipers, and more.",
+          "role": "Built food-tower mechanics (Burger Mortar, Fries Shooter, Hot-Dog Sniper, Pizza 360°, etc.), the wave system, upgrade paths, and combo bonuses. Integrated the full live-ops and monetization stack (ads, IAP, analytics, Unity Addressables).",
+          "tech": [
+            {
+              "name": "Object Pooling",
+              "detail": "Spawned enemies, tower projectiles, and combo effects efficiently."
+            },
+            {
+              "name": "ScriptableObjects",
+              "detail": "Stored tower stats (Burger Mortar, Fries Shooter, etc.), enemy data, and wave configs."
+            },
+            {
+              "name": "Observer Pattern",
+              "detail": "Coordinated wave events, tower triggers, and combo bonuses."
+            },
+            {
+              "name": "Coroutines",
+              "detail": "Managed wave spawn timers and tower fire rates."
+            },
+            {
+              "name": "Appodeal",
+              "detail": "Integrated Appodeal SDK for ad mediation across multiple networks."
+            },
+            {
+              "name": "Google AdMob",
+              "detail": "Implemented banner, interstitial, and rewarded ad placements."
+            },
+            {
+              "name": "IronSource",
+              "detail": "Integrated IronSource SDK as an additional ad mediation source."
+            },
+            {
+              "name": "Unity IAP",
+              "detail": "Implemented in-app purchases for premium content and ad-removal upgrades."
+            },
+            {
+              "name": "Game Analytics",
+              "detail": "Implemented Game Analytics for player behavior tracking and funnel analysis."
+            },
+            {
+              "name": "Firebase Analytics",
+              "detail": "Integrated Firebase Analytics to capture in-game events and user metrics."
+            },
+            {
+              "name": "Firebase Crashlytics",
+              "detail": "Used Crashlytics to monitor and diagnose runtime crashes in production."
+            },
+            {
+              "name": "Firebase Firestore",
+              "detail": "Used Firestore for real-time data persistence (leaderboards, cloud save)."
+            },
+            {
+              "name": "Firebase Remote Config",
+              "detail": "Tuned game parameters (difficulty, prices, events) without shipping app updates."
+            },
+            {
+              "name": "Addressables",
+              "detail": "Used Unity Addressables to load assets on-demand, reducing initial install size."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.ultragames.foodtd"
+            },
+            {
+              "label": "Apple App Store",
+              "url": "https://apps.apple.com/us/app/food-td/id6596741117"
+            }
+          ]
+        },
+        {
+          "slug": "FrostDefense",
+          "title": "Frost Defense",
+          "summary": "A tower defense set in a frozen wilderness where players construct and upgrade defensive towers against waves of arctic creatures while uncovering the mystery of a lost civilization beneath the ice.",
+          "role": "Built defensive tower placement, arctic enemy waves, and resource progression across a snow-themed campaign. Integrated the full live-ops and monetization stack (ads, IAP, analytics, Unity Addressables).",
+          "tech": [
+            {
+              "name": "Object Pooling",
+              "detail": "Spawned arctic enemy waves and tower projectiles efficiently."
+            },
+            {
+              "name": "ScriptableObjects",
+              "detail": "Stored tower, enemy, and campaign-level data."
+            },
+            {
+              "name": "Observer Pattern",
+              "detail": "Coordinated wave events and tower triggers."
+            },
+            {
+              "name": "Particle Systems",
+              "detail": "Created frost, snow, and impact effects."
+            },
+            {
+              "name": "Appodeal",
+              "detail": "Integrated Appodeal SDK for ad mediation across multiple networks."
+            },
+            {
+              "name": "Google AdMob",
+              "detail": "Implemented banner, interstitial, and rewarded ad placements."
+            },
+            {
+              "name": "IronSource",
+              "detail": "Integrated IronSource SDK as an additional ad mediation source."
+            },
+            {
+              "name": "Unity IAP",
+              "detail": "Implemented in-app purchases for premium content and ad-removal upgrades."
+            },
+            {
+              "name": "Game Analytics",
+              "detail": "Implemented Game Analytics for player behavior tracking and funnel analysis."
+            },
+            {
+              "name": "Firebase Analytics",
+              "detail": "Integrated Firebase Analytics to capture in-game events and user metrics."
+            },
+            {
+              "name": "Firebase Crashlytics",
+              "detail": "Used Crashlytics to monitor and diagnose runtime crashes in production."
+            },
+            {
+              "name": "Firebase Firestore",
+              "detail": "Used Firestore for real-time data persistence (leaderboards, cloud save)."
+            },
+            {
+              "name": "Firebase Remote Config",
+              "detail": "Tuned game parameters (difficulty, prices, events) without shipping app updates."
+            },
+            {
+              "name": "Addressables",
+              "detail": "Used Unity Addressables to load assets on-demand, reducing initial install size."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.ultragames.frostdefense"
+            },
+            {
+              "label": "Apple App Store",
+              "url": "https://apps.apple.com/in/app/frost-defense/id6698866911"
+            }
+          ]
+        },
+        {
+          "slug": "GrassDefense",
+          "title": "Grass Defense",
+          "summary": "A strategic tower defense where players build and upgrade towers, manage resources, and adapt strategy against waves of fierce creatures across dynamic wilderness environments.",
+          "role": "Built tower placement and upgrade systems against creature waves across dynamic wilderness environments. Integrated the full live-ops and monetization stack (ads, IAP, analytics, Unity Addressables).",
+          "tech": [
+            {
+              "name": "Object Pooling",
+              "detail": "Spawned creature waves and tower projectiles efficiently."
+            },
+            {
+              "name": "ScriptableObjects",
+              "detail": "Stored tower, creature, and environment data."
+            },
+            {
+              "name": "Observer Pattern",
+              "detail": "Coordinated wave events and tower triggers."
+            },
+            {
+              "name": "Particle Systems",
+              "detail": "Created nature and impact effects."
+            },
+            {
+              "name": "Appodeal",
+              "detail": "Integrated Appodeal SDK for ad mediation across multiple networks."
+            },
+            {
+              "name": "Google AdMob",
+              "detail": "Implemented banner, interstitial, and rewarded ad placements."
+            },
+            {
+              "name": "IronSource",
+              "detail": "Integrated IronSource SDK as an additional ad mediation source."
+            },
+            {
+              "name": "Unity IAP",
+              "detail": "Implemented in-app purchases for premium content and ad-removal upgrades."
+            },
+            {
+              "name": "Game Analytics",
+              "detail": "Implemented Game Analytics for player behavior tracking and funnel analysis."
+            },
+            {
+              "name": "Firebase Analytics",
+              "detail": "Integrated Firebase Analytics to capture in-game events and user metrics."
+            },
+            {
+              "name": "Firebase Crashlytics",
+              "detail": "Used Crashlytics to monitor and diagnose runtime crashes in production."
+            },
+            {
+              "name": "Firebase Firestore",
+              "detail": "Used Firestore for real-time data persistence (leaderboards, cloud save)."
+            },
+            {
+              "name": "Firebase Remote Config",
+              "detail": "Tuned game parameters (difficulty, prices, events) without shipping app updates."
+            },
+            {
+              "name": "Addressables",
+              "detail": "Used Unity Addressables to load assets on-demand, reducing initial install size."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.ultragames.GrassDefense"
+            }
+          ]
+        },
+        {
+          "slug": "ZooKeeperIdle",
+          "title": "Zoo Keeper Idle",
+          "summary": "An idle zoo-tycoon and merge game where players evolve animals into rare and mythical creatures, expand habitats, manage visitors, and unlock fantasy zones with dinosaurs and unicorns.",
+          "role": "Built the animal-merging evolution system (cat → tiger → lion, dinosaur and mythical creature combinations), habitat expansion, visitor flow, and idle income progression. Integrated the full live-ops and monetization stack (ads, IAP, analytics, Unity Addressables).",
+          "tech": [
+            {
+              "name": "Coroutines",
+              "detail": "Powered idle income progression and offline-earnings calculation."
+            },
+            {
+              "name": "ScriptableObjects",
+              "detail": "Stored animal evolution chains (cat → tiger → lion, etc.) and habitat data."
+            },
+            {
+              "name": "State Machines",
+              "detail": "Managed visitor flow and habitat progression states."
+            },
+            {
+              "name": "Drag-and-drop",
+              "detail": "Implemented the animal-merging gesture mechanic."
+            },
+            {
+              "name": "Appodeal",
+              "detail": "Integrated Appodeal SDK for ad mediation across multiple networks."
+            },
+            {
+              "name": "Google AdMob",
+              "detail": "Implemented banner, interstitial, and rewarded ad placements."
+            },
+            {
+              "name": "IronSource",
+              "detail": "Integrated IronSource SDK as an additional ad mediation source."
+            },
+            {
+              "name": "Unity IAP",
+              "detail": "Implemented in-app purchases for premium content and ad-removal upgrades."
+            },
+            {
+              "name": "Game Analytics",
+              "detail": "Implemented Game Analytics for player behavior tracking and funnel analysis."
+            },
+            {
+              "name": "Firebase Analytics",
+              "detail": "Integrated Firebase Analytics to capture in-game events and user metrics."
+            },
+            {
+              "name": "Firebase Crashlytics",
+              "detail": "Used Crashlytics to monitor and diagnose runtime crashes in production."
+            },
+            {
+              "name": "Firebase Firestore",
+              "detail": "Used Firestore for real-time data persistence (leaderboards, cloud save)."
+            },
+            {
+              "name": "Firebase Remote Config",
+              "detail": "Tuned game parameters (difficulty, prices, events) without shipping app updates."
+            },
+            {
+              "name": "Addressables",
+              "detail": "Used Unity Addressables to load assets on-demand, reducing initial install size."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.ultragames.zookeeperidle"
+            }
+          ]
+        },
+        {
+          "slug": "WarriorLand",
+          "title": "Warrior Land",
+          "summary": "A fantasy adventure where players battle creatures, gather resources, and grow their warrior across a sprawling medieval land.",
+          "role": "Implemented combat progression, resource collection, and base growth systems for the fantasy warrior adventure. Integrated the full live-ops and monetization stack (ads, IAP, analytics, Unity Addressables).",
+          "tech": [
+            {
+              "name": "NavMesh AI",
+              "detail": "Implemented enemy pathfinding and combat behavior."
+            },
+            {
+              "name": "Animator",
+              "detail": "Built the combat animation state machine and transitions."
+            },
+            {
+              "name": "ScriptableObjects",
+              "detail": "Stored combat, equipment, and progression data."
+            },
+            {
+              "name": "Object Pooling",
+              "detail": "Spawned enemies and projectiles across combat encounters."
+            },
+            {
+              "name": "Appodeal",
+              "detail": "Integrated Appodeal SDK for ad mediation across multiple networks."
+            },
+            {
+              "name": "Google AdMob",
+              "detail": "Implemented banner, interstitial, and rewarded ad placements."
+            },
+            {
+              "name": "IronSource",
+              "detail": "Integrated IronSource SDK as an additional ad mediation source."
+            },
+            {
+              "name": "Unity IAP",
+              "detail": "Implemented in-app purchases for premium content and ad-removal upgrades."
+            },
+            {
+              "name": "Game Analytics",
+              "detail": "Implemented Game Analytics for player behavior tracking and funnel analysis."
+            },
+            {
+              "name": "Firebase Analytics",
+              "detail": "Integrated Firebase Analytics to capture in-game events and user metrics."
+            },
+            {
+              "name": "Firebase Crashlytics",
+              "detail": "Used Crashlytics to monitor and diagnose runtime crashes in production."
+            },
+            {
+              "name": "Firebase Firestore",
+              "detail": "Used Firestore for real-time data persistence (leaderboards, cloud save)."
+            },
+            {
+              "name": "Firebase Remote Config",
+              "detail": "Tuned game parameters (difficulty, prices, events) without shipping app updates."
+            },
+            {
+              "name": "Addressables",
+              "detail": "Used Unity Addressables to load assets on-demand, reducing initial install size."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.ultragames.warriorland"
+            }
+          ]
+        }
+      ],
+      "note": "Featured below. Full catalogue of 50+ shipped titles on Google Play.",
+      "noteUrl": "https://play.google.com/store/apps/dev?id=8943863732834633521"
+    },
+    {
+      "company": "FlyingCaps Technologies",
+      "dates": "Sep 2022 — Jan 2024",
+      "projects": [
+        {
+          "slug": "NitroXtremeRacer",
+          "title": "Nitro Xtreme Racer",
+          "summary": "A 3D racing game featuring multiple race types such as Sprint, Circuit, and Knockout, set across detailed environments including city, forest, and desert.",
+          "role": "I led development of types of mode like sprint, Lap Knockout, Speed Cam etc, UI and Animation, Cinemachine for cinematic shots, Optimized the games to run at 60FPS even on low-end devices.",
+          "tech": [
+            {
+              "name": "Cinemachine",
+              "detail": "Implemented Cinemachine for cinematic race start/finish sequences and garage car showcases."
+            },
+            {
+              "name": "ScriptableObject",
+              "detail": "Implemented ScriptableObjects for modular and scalable level and car data management."
+            },
+            {
+              "name": "Physics Raycast",
+              "detail": "Used Physics Raycasting to detect obstacles and guide AI car navigation through the environment."
+            },
+            {
+              "name": "Singleton Pattern",
+              "detail": "Implemented Singleton Pattern to ensure centralized control and global access to key systems including UI, gameplay, level, and audio management."
+            },
+            {
+              "name": "Node-based path",
+              "detail": "Implemented a node-based path system to enable smooth and controlled AI path following."
+            },
+            {
+              "name": "Spritesheet",
+              "detail": "Collaborated with the UI artist to consolidate UI assets into a spritesheet for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Texture Atlas",
+              "detail": "Collaborated with the game artist to consolidate texture assets into a texture atlas for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Occlusion Culling",
+              "detail": "Implemented Occlusion Culling in densely built city environments to optimize rendering performance by avoiding unnecessary draw calls."
+            },
+            {
+              "name": "Batching",
+              "detail": "Implemented static batching for non-moving environment elements and dynamic batching for frequently changing objects to optimize rendering performance."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.flyingcaps.max.car.drifting.games&hl=en-IN"
+            },
+            {
+              "label": "Apple App Store",
+              "url": "https://apps.apple.com/in/app/nitro-xtreme-racer-car-racing/id6450665399"
+            }
+          ]
+        },
+        {
+          "slug": "HighwayCarSimulator",
+          "title": "Real Traffic Car Driving Games",
+          "summary": "A 3D traffic simulation driving game where players navigate bustling city streets and highways, dodge or intentionally crash through traffic, and complete varied mission objectives.",
+          "role": "I led the development of the vehicle damage system and implemented dynamic day–night cycles, an intelligent traffic system, and seamless endless environments.",
+          "tech": [
+            {
+              "name": "Cinemachine",
+              "detail": "Implemented Cinemachine for cinematic race start/finish sequences and garage car showcases."
+            },
+            {
+              "name": "ScriptableObject",
+              "detail": "Implemented ScriptableObjects for modular and scalable level and car data management."
+            },
+            {
+              "name": "Physics Raycast",
+              "detail": "Used Physics Raycasting to detect obstacles and guide AI car navigation through the environment."
+            },
+            {
+              "name": "Singleton Pattern",
+              "detail": "Implemented Singleton Pattern to ensure centralized control and global access to key systems including UI, gameplay, level, and audio management."
+            },
+            {
+              "name": "Spritesheet",
+              "detail": "Collaborated with the UI artist to consolidate UI assets into a spritesheet for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Texture Atlas",
+              "detail": "Collaborated with the game artist to consolidate texture assets into a texture atlas for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Object Pooling",
+              "detail": "Implemented Object Pooling to optimize performance during continuous spawning of vehicles and environmental objects."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.mobislash.traffic.car.driving.simulator"
+            }
+          ]
+        },
+        {
+          "slug": "HighwayBikeSimulator",
+          "title": "Real Traffic Bike Driving Game",
+          "summary": "An immersive 3D motorcycle simulator where players navigate bustling city streets and highways, dodging traffic and completing challenging missions.",
+          "role": "I led the development of dynamic weather systems and implemented a robust bike customization framework, enhancing both aesthetics and performance.",
+          "tech": [
+            {
+              "name": "Cinemachine",
+              "detail": "Implemented Cinemachine for cinematic race start/finish sequences and garage bike showcases."
+            },
+            {
+              "name": "ScriptableObject",
+              "detail": "Implemented ScriptableObjects for modular and scalable level and car data management."
+            },
+            {
+              "name": "Physics Raycast",
+              "detail": "Used Physics Raycasting to detect obstacles and guide AI bike navigation through the environment."
+            },
+            {
+              "name": "Singleton Pattern",
+              "detail": "Implemented Singleton Pattern to ensure centralized control and global access to key systems including UI, gameplay, level, and audio management."
+            },
+            {
+              "name": "Spritesheet",
+              "detail": "Collaborated with the UI artist to consolidate UI assets into a spritesheet for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Texture Atlas",
+              "detail": "Collaborated with the game artist to consolidate texture assets into a texture atlas for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Object Pooling",
+              "detail": "Implemented Object Pooling to optimize performance during continuous spawning of vehicles and environmental objects."
+            },
+            {
+              "name": "Inverse Kinematic",
+              "detail": "Used Inverse Kinematics to align the character’s limbs naturally during bike riding animations."
+            },
+            {
+              "name": "Ragdoll",
+              "detail": "Used ragdoll simulation to enhance realism during character collision and crash sequences."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.mobislash.traffic.bike.driving.simulator"
+            }
+          ]
+        },
+        {
+          "slug": "SlinkIO3D",
+          "title": "Slink.io 3D: Fun IO Snake Game",
+          "summary": "A modern take on the classic Snake game, where players compete to become the largest snake by consuming food and outmaneuvering rivals.",
+          "role": "I led the development of the AI snake using Physics Raycasting and implemented object pooling for food spawning. I also used the Observer Pattern to manage UI updates, animations, and power-up triggers.",
+          "tech": [
+            {
+              "name": "ScriptableObject",
+              "detail": "Implemented ScriptableObjects for modular and scalable level data management."
+            },
+            {
+              "name": "Physics Raycast",
+              "detail": "Used Physics Raycasting to detect obstacles and guide AI snake navigation through the environment."
+            },
+            {
+              "name": "Singleton Pattern",
+              "detail": "Implemented Singleton Pattern to ensure centralized control and global access to key systems including UI, gameplay, level, and audio management."
+            },
+            {
+              "name": "Spritesheet",
+              "detail": "Collaborated with the UI artist to consolidate UI assets into a spritesheet for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Texture Atlas",
+              "detail": "Collaborated with the game artist to consolidate texture assets into a texture atlas for better optimization and rendering efficiency."
+            },
+            {
+              "name": "Object Pooling",
+              "detail": "Implemented Object Pooling to optimize performance during continuous spawning of foods and snakes."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.apps2us.snake.io.slither&hl=en-IN"
+            }
+          ]
+        },
+        {
+          "slug": "MarblesMagic",
+          "title": "Marbles Magic: Marbles Games",
+          "summary": "An engaging marble-shooting puzzle game where players aim to eliminate chains of colorful marbles by matching three or more of the same color.",
+          "role": "I contributed to the development of the user interface (UI), UI animations and UI Effects.",
+          "tech": [
+            {
+              "name": "DOTween",
+              "detail": "Utilized DOTween for smooth and efficient UI animations."
+            },
+            {
+              "name": "2D Sprite Animation",
+              "detail": "Implemented for character motion and actions."
+            },
+            {
+              "name": "Particle System",
+              "detail": "Used to enhance UI with dynamic visual effects."
+            }
+          ],
+          "links": [
+            {
+              "label": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.hikboo.jungle.zumba.marble&hl=en-IN"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
