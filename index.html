@@ -39,6 +39,7 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#ai-workflow">AI Workflow</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -500,6 +501,63 @@
             <li>Git</li>
             <li>Play Console</li>
             <li>App Store Connect</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ai-workflow" class="section">
+    <div class="container">
+      <h2>AI-Native Workflow</h2>
+      <div class="about-text">
+        <p>Most of my day-to-day code now goes through AI agents, mainly <strong>Claude Code</strong>. I break the work into steps, review what the agent produces, and keep the reusable parts as skills so the next project starts faster. Below are the pipelines I've built for our studio's release and monetization work.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Android Release Pipeline</h3>
+          <ul>
+            <li>Agent skill: headless Unity build &rarr; signed AAB &rarr; Google Play upload</li>
+            <li>Verifies package, versionCode, target SDK, ABIs and signing certificate on every build</li>
+            <li>Custom Play Developer API client with a dry-run mode that validates an upload without publishing it</li>
+            <li>Guardrails: snapshots and restores ProjectSettings, and production releases need an explicit flag</li>
+            <li>Used in production on Teen Patti Expert</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Ads &amp; Mediation Audit</h3>
+          <ul>
+            <li>Agent skill that checks Appodeal + AdMob setup per platform before release</li>
+            <li>Catches placeholder AdMob IDs that crash iOS at launch, and test IDs left in live builds</li>
+            <li>Flags bundle IDs inherited from cloned projects, which can send ad revenue to the wrong app</li>
+            <li>Used in production on Arm Wrestler 3D</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Monetization Pass, Built With AI</h3>
+          <ul>
+            <li>Warrior Land: full pass done in a few hours with Claude Code</li>
+            <li>Interstitial placements on every screen-transition button</li>
+            <li>Multiple rewarded-ad placements, each tied to a clear player benefit</li>
+            <li>Rebalanced the coin economy so rewarded ads are worth choosing</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Debugging With Agents</h3>
+          <ul>
+            <li>Upgraded Appodeal 3.12 &rarr; 4.3 with the agent and traced ~200 duplicate-class build errors to Maven group IDs that changed in the SDK</li>
+            <li>API compatibility checked mechanically against the new SDK, not guessed</li>
+            <li>Encoded the lesson into the skill so it never costs time twice</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>AI Tooling</h3>
+          <ul>
+            <li>Claude Code</li>
+            <li>Custom Agent Skills</li>
+            <li>MCP (Unity Editor integration)</li>
+            <li>Batchmode / CLI Automation</li>
+            <li>Node.js Scripting</li>
           </ul>
         </div>
       </div>
